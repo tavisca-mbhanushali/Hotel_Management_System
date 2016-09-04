@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="LINQtoSQL">
+  <DataContextMoniker Name="/LINQtoSQLDataContext" />
+  <nestedChildShapes>
+    <classShape Id="e099e120-bde4-441d-9806-a4291e64c2ae" absoluteBounds="5.25, 0.5, 2.625, 1.7708968098958331">
+      <DataClassMoniker Name="/LINQtoSQLDataContext/BookingDetail" />
+      <nestedChildShapes>
+        <elementListCompartment Id="47f5ddf9-8f47-49fa-81c0-46bf6868a12d" absoluteBounds="5.265, 0.96, 2.5949999999999998, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="08741574-68d4-485e-abef-8d2ea6a55f37" absoluteBounds="1.375, 0.5, 2.625, 1.7708968098958331">
+      <DataClassMoniker Name="/LINQtoSQLDataContext/Customer" />
+      <nestedChildShapes>
+        <elementListCompartment Id="108f0e7b-88ce-4578-aa2c-699aa82a0e40" absoluteBounds="1.3900000000000001, 0.96, 2.5949999999999998, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7415b59f-503c-43fd-9597-a431bd88f99d" absoluteBounds="1.625, 2.75, 2.25, 2.1554996744791666">
+      <DataClassMoniker Name="/LINQtoSQLDataContext/Hotel" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fff7d28c-d157-4333-89d0-b7efe26d8657" absoluteBounds="1.6400000000000001, 3.21, 2.2199999999999998, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4 : 1.38544840494792); (5.25 : 1.38544840494792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/LINQtoSQLDataContext/Customer/Customer_BookingDetail" />
+      <nodes>
+        <classShapeMoniker Id="08741574-68d4-485e-abef-8d2ea6a55f37" />
+        <classShapeMoniker Id="e099e120-bde4-441d-9806-a4291e64c2ae" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3.875 : 3.82774983723958); (6.5625 : 3.82774983723958); (6.5625 : 2.27089680989583)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/LINQtoSQLDataContext/Hotel/Hotel_BookingDetail" />
+      <nodes>
+        <classShapeMoniker Id="7415b59f-503c-43fd-9597-a431bd88f99d" />
+        <classShapeMoniker Id="e099e120-bde4-441d-9806-a4291e64c2ae" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
